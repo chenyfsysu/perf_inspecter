@@ -1,0 +1,25 @@
+<template class="task-template">
+  <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="http://code.highcharts.com/highcharts.js"></script>
+  <section id="daily_net_section" class="section js-section u-category-windows">
+    <header class="section-header">
+      <div class="section-wrapper">
+        <h1>
+          <svg class="section-icon"><use xlink:href="assets/img/icons.svg#icon-windows"></use></svg>
+         每日网络质量统计  
+        </h1>
+        <form>
+       查询日期：  <input id="date" type="date">
+        </form>
+         <button id="query_result" type="button" class="section-button">查询</button>
+      </div>
+
+    </header>
+
+    <div id="container" style="width: 550px; height: 400px; margin: 0 auto"></div>
+    <script type="text/javascript">
+      require('./renderer-process/daily_net/daily_net')
+    </script>
+
+  </section>
+</template>
